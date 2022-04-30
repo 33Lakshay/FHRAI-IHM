@@ -1,0 +1,591 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+   <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta http-equiv="Cache-control" content="public,max-age=31536000" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+   <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.fhrai-ihm.com/images/og_image.jpg">
+    <meta name="keywords" content="Institute of Hospitality Management, hotel management in Delhi ncr,  best hotel management colleges in greater noida, degree in hotel management course, FHRAI IHM Institute, NCHMCT approved college in noida">
+   <meta property="og:title" content="Hotel Management college in Delhi NCR | Admission Open 2021">
+    <meta property="og:url" content="https://fhrai-ihm.com">
+<meta name="google-site-verification" content="nUCD_ivCckOeLE0HZOb6cEXYQ_VweC3dZQkpD849RVc" />
+    <link rel="alternate" href="https://fhrai-ihm.com" hreflang="en-us" />
+    <!--meta name="robots" content="noimageindex, nofollow, nosnippet" --> 
+    <meta name="robots" content="index,follow ">
+    
+    <link rel="stylesheet" href="css/uibootstrap.min.css" />
+    <link rel="stylesheet" href="css/uistyle.css" />
+    <script src="js/uijquery-3.2.1.slim.min.js"></script>
+<script src="js/uipopper.min.js"></script>
+<script src="js/uibootstrap.min.js"></script>
+<script src="js/uidefault.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VLDB5X8MGE"></script>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+     <script>
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                  "body").style.visibility = "hidden";
+                document.querySelector(
+                  "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                  "#loader").style.display = "none";
+                document.querySelector(
+                  "body").style.visibility = "visible";
+            }
+        };
+    </script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-VLDB5X8MGE');
+</script>
+     <script src="js/bootnavbar.js" ></script>
+    <script>
+        $(function () {
+            $('#main_navbar').bootnavbar();
+        })
+    </script>
+    
+    
+    <style>
+    
+
+
+/* hover dropdown menus */
+@media only screen and (max-width: 991px) {
+    .navbar .show > .dropdown-toggle::after{
+        transform: rotate(-90deg);
+    }
+}
+        @media only screen and (min-width: 992px) {
+          .navbar-nav li .dropdown-menu a:after  {
+         transform: rotate(270deg);
+         float: right;
+    margin-top: 6px;
+        }
+    .navbar .collapse ul li{position:relative;}
+    .navbar .collapse ul li:hover> ul{display:block}
+    .navbar .collapse ul ul{position:absolute;top:100%;left:0;min-width:250px;display:none;margin:0}
+    .navbar .collapse ul ul ul{position:absolute;top:0;left:100%;min-width:250px;display:none}
+    /*.navbar .collapse ul ul ul ul{position:absolute;top:0;left:-100%;min-width:250px;display:none;z-index:1}*/
+}
+        .navbar-nav li .dropdown-menu li a {
+            padding: 10px 20px;
+    font-size: 14px;
+        }
+        .navbar-nav li .dropdown-menu li a:hover, .navbar-nav li .dropdown-menu li a:focus, .navbar-nav li.active, .navbar-nav .nav-item:hover {
+                color: #fff;
+    background: #40c1a5;
+        }
+      
+          .captcha_img {
+            height: 50px;
+            margin-bottom: 2%;
+        }
+        .captcha_div {
+            text-align: center;
+        }
+        .captcha_input {
+            width: 50%;
+        }
+                .t1margin{
+            margin-left:16rem;
+
+        }
+        .t2margin{
+            margin-left:5rem;
+        }
+        .h2{
+    font-weight: 600;
+    font-family: 'Arial-Bold';
+    font-size: 2rem;
+}
+        .t2m{
+            margin-left:4rem;
+font-weight: 600;
+    font-family: 'Arial-Bold';
+    
+        }
+        .t4m{
+   
+font-weight: 600;
+  
+    font-size:1.3rem;
+        }
+
+        @media (min-width:361px) and (max-width:400px) {
+            .t4m {
+
+ margin:0px;
+                 text-align:center;
+            }
+             .t1margin{
+           text-align:center;
+           margin:0px;
+        }
+             .t2margin{
+                 margin:0px;
+            text-align:center;
+        }
+             .t2m{
+                  margin:0px;
+           text-align:center;
+font-weight: 600;
+    font-family: 'Arial-Bold';
+    
+        }
+        }
+        .modal-img{
+            width:100%;
+            height:641px;
+
+        }
+        .loader {
+     height: calc(100vh - 0vh);
+    width: calc(100vw - 0vw);
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 9999;
+}
+        .loader_img {
+    width: 15vw;
+}
+   #loader {
+            border: 12px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 12px solid #444444;
+            width: 70px;
+            height: 70px;
+            animation: spin 1s linear infinite;
+        }
+          
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+          
+        .center {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+     <div id="loader" class="center"></div>
+    <form id="form1" runat="server" >
+        <div class="icon-bar">
+            <a href="https://www.facebook.com/FHRAIIHMOFFICIAL" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/FHRAIIHMOFF" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/fhraiihmofficial" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/fhraiihmofficial/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UC6-FR1XMbCG6X_we9JqSxDQ/featured" target="_blank" class="youtube"><i class="fa fa-youtube-play"></i></a>
+        </div>
+        <div class="container-fluid home-topheader">
+            <div class="container">
+                <ul>
+                    <li><a href="https://wa.me/919810781960?text=Hi,%20%0AI%20am%20interested%20to%20know%20more%20about%20your%20course." style="color: #000"><i class="fa fa-whatsapp"></i>+91-9810781960</a></li>
+                    <li><a href="tel:+919810781960" style="color: #000"><i class="fa fa-phone" aria-hidden="true"></i>+91 9810781960</a></li>
+                    <li class="li-width">
+                        <div class="website_search_div">
+                            <!-- Google Search Result Snippet Begins -->
+    <%--                        <script>
+                                (function () {
+                                    var cx = '008207063786558279179:q90xzgvztre';
+                                    var gcse = document.createElement('script');
+                                    gcse.type = 'text/javascript';
+                                    gcse.async = true;
+                                    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                                    var s = document.getElementsByTagName('script')[0];
+                                    s.parentNode.insertBefore(gcse, s);
+                                })();
+                            </script>
+                            <gcse:search></gcse:search>--%>
+                            <!-- Google Search Result Snippet Ends -->
+                        </div>
+                    </li>
+                    <li class="applynowbtn">
+                        <a href="Apply_Now.aspx" style="padding: 7px 10px !important; cursor: pointer; color: #fff">APPLY NOW</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid common-menu" style="padding: 0">
+
+            <div class='wrapper'>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand order2" href="Default.aspx">
+                        <img src="images/FHRAI_Logo.jpg" alt="FHRAI Logo" /></a>
+                    <div class="col-lg-6">
+                        <h2 class="h2">FHRAI - Institute of Hospitality Management</h2>
+                        <p class="t2m">(An Initiative of Federation of Hotel & Restaurant Associations Of India) </p>
+                        <h6 class="t1margin"> Affiliated to</h6>
+                        <h5 class="t4m"> National Council for Hotel Mangement & Catering Technology, Noida</h5>
+                        <p class="t2margin">(An Autonomous Body Under Ministry of Tourism, Govt, of India )</p>
+
+                    </div>
+
+                    <a class="navbar-brand order2" href="http://www.nchm.nic.in/" target="_blank">
+                        <img src="images/NCHMCT_Logo.jpg" alt="NCHMCT Logo" />
+
+                    </a>
+                    <button class="navbar-toggler order3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse order4" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav Lato-Bold-14px" id="menu">
+                            <li class="nav-item" id="defaultpage" runat="server">
+                                <a class="nav-link" href="Default.aspx">HOME </a>
+                            </li>
+                            <li class="nav-item dropdown" id="aboutpage" runat="server">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ABOUT US </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                                    <li><a class="dropdown-item" href="About_FHRAI.aspx">ABOUT FHRAI</a></li>
+                                    <li><a class="dropdown-item" href="About_FHRAI_IHM.aspx">ABOUT FHRAI-IHM</a></li>
+                                    <li><a class="dropdown-item" href="Faculty.aspx">FACULTY & TEAM</a></li>
+                                    <li><a class="dropdown-item" href="Affiliation.aspx">AFFILIATION</a></li>
+                                     
+                                      <li><a class="dropdown-item" href="photo_gallery.aspx">GALLERY </a></li>
+                                </ul>
+
+
+                            </li>
+
+                            <li class="nav-item dropdown" id="academicspage" runat="server">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ACADEMICS </a>
+                                <ul id="subdropdownul" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                                    <li class="nav-item dropdown" id="subdropdownli"><a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownMenuLink5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">REGULAR ACADEMIC PROGRAMS</a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink5">
+                                            <li><a class="dropdown-item" href="BSc_Hospitality_Hotel_Administration.aspx">BSC IN HOSPITALITY & HOTEL ADMINISTRATION</a></li>
+                                            <li><a class="dropdown-item" href="Diploma_Food_Production.aspx">DIPLOMA IN FOOD PRODUCTION</a></li>
+                                            <li><a class="dropdown-item" href="Diploma_Bakery_Confectionary.aspx">DIPLOMA IN BAKERY & CONFECTIONARY</a></li>
+                                            <li><a class="dropdown-item" href="Diploma_Food_Beverage_Service.aspx">DIPLOMA IN FOOD & BEVERAGE SERVICE</a></li>
+
+                                        </ul>
+                                    </li>
+
+                                    <li><a class="dropdown-item" href="Skills_Knowledge_Programs.aspx">SKILL DEVELOPMENT & KNOWLEDGE ORIENTATION PROGRAMS</a></li>
+
+
+                                </ul>
+
+
+                            </li>
+
+                            <li class="nav-item" id="campusoverview" runat="server">
+                                <a class="nav-link" href="Campus_Overview.aspx">CAMPUS OVERVIEW</a>
+                            </li>
+                            <li class="nav-item dropdown" id="admission" runat="server">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ADMISSIONS </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                                    <li><a class="dropdown-item" href="Notification_How_Apply.aspx">NOTIFICATION & HOW TO APPLY</a></li>
+                                    <li><a class="dropdown-item" href="Scholarship.aspx">SCHOLARSHIP</a></li>
+                                    <li><a class="dropdown-item" href="Student_Loan.aspx">STUDENT LOAN</a></li>
+                                    <li><a class="dropdown-item" href="BSC_Direct_Admission_Registration.aspx">BSC DIRECT ADMISSION REGISTRATION</a></li>
+                                    <li><a class="dropdown-item" href="Diploma_Admission_Registration.aspx">DIPLOMA ADMISSION REGISTRATION</a></li>
+                                </ul>
+
+
+                            </li>
+
+                            <li class="nav-item" id="fee" runat="server">
+                                <a class="nav-link" href="Fee.aspx">FEES</a>
+                            </li>
+                            <li class="nav-item" id="studentzone" runat="server">
+                                <a class="nav-link" href="Student_Zone.aspx">STUDENT ZONE</a>
+                            </li>
+                            <li class="nav-item" id="newsevents" runat="server">
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinknews" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">NEWS & ARTICLES </a>
+                               
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinknews">
+                                    <li><a class="dropdown-item" href="News_release.aspx">News</a></li>
+                                    <li><a class="dropdown-item" href="News_Events.aspx">Article</a></li>
+                                
+                                </ul>
+                            </li>
+                            <li class="nav-item" id="blog" runat="server">
+                                <a class="nav-link" href="Blog.aspx">BLOG</a>
+                            </li>
+
+                            <li class="nav-item dropdown" id="contacts" runat="server">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CONTACT US </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink6">
+                                    <li><a class="dropdown-item" href="Contacts.aspx#admission_cell">ADMISSION CELL</a></li>
+                                    <li><a class="dropdown-item" href="Contacts.aspx#address">ADDRESS</a></li>
+                                    <li><a class="dropdown-item" data-toggle="modal" data-target="#myModalgeneral">GENERAL ENQUIRY</a></li>
+                                </ul>
+
+
+                            </li>
+
+
+
+                        </ul>
+                    </div>
+
+                </nav>
+
+            </div>
+
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <div class="clearfix"></div>
+        <div class="container-fluid footer-links">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5 class="Lato-Bold-18px">Important Links</h5>
+
+                        <h6 class="Lato-Regular-16px"><a href="About_FHRAI_IHM.aspx">About FHRAI - IHM</a></h6>
+
+                        <h6 class="Lato-Regular-16px"><a href="Campus_Overview.aspx">Campus</a></h6>
+                        <h6 class="Lato-Regular-16px"><a data-toggle="modal" data-target="#myModalgeneral" style="cursor: pointer">General Enquiry</a></h6>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="Lato-Bold-18px">Contact Admission Cell</h5>
+                        <h6 class="Lato-Regular-16px"><i class="fa fa-mobile icon-class" aria-hidden="true" style="font-size: 22px; vertical-align: top"></i>Mobile: <a href="tel:+919810781960">09810781960</a></h6>
+                        <h6 class="Lato-Regular-16px"><i class="fa fa-phone icon-class" aria-hidden="true"></i>Telephone: <a href="tel:+01202978029">0120 - 2978029</a></h6>
+                        <h6 class="Lato-Regular-16px"><i class="fa fa-envelope icon-class" aria-hidden="true"></i>e-mail: <a href="mailto:admission@fhrai-ihm.com">admission@fhrai-ihm.com</a></h6>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="Lato-Bold-18px">Address</h5>
+                        <h6 class="Lato-Regular-16px"><a href="https://goo.gl/maps/HwWhaW3a6zZ1aDsr5">FHRAI Institute of Hospitality Management
+
+                    Plot - 45, Knowledge Park III, 
+                    Greater Noida,
+                    Uttar Pradesh 201310 </a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid footer-div">
+            <p class="Lato-Regular-14px">Copyright © 2021 All Rights Reserved</p>
+        </div>
+        <div class="modal" id="myModal" data-backdrop="static" data-keyboard="false" >
+            <div class="modal-dialog modal-lg"  >
+                     <div class="  modal-content">
+                    <div class="row">
+                          <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
+                            <img src="/images/addmisson.jpg" class="modal-img" />
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title Lato-Bold-18px">Admission Query Form</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+
+                                <div class="row form-margin">
+                                    <div class="col-md-12" style="text-align: right">
+                                        <span class="Lato-Regular-16px" style="color: #222"><span><b style="color: red">*</b></span> indicates mandatory field.</span>
+                                    </div>
+                                </div>
+                                <div class="row form-margin">
+                                    <div class="col-md-12">
+                                        <p class="Lato-Bold-16px" style="margin-bottom: 5px">Name <span style="color: red">*</span></p>
+                                        <asp:TextBox ID="txtname" runat="server" CssClass="form-control Lato-Regular-16px" MaxLength="50"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="reqName" ValidationGroup="SUBMIT22" ControlToValidate="txtname" CssClass="Lato-Regular-16px" runat="server" ErrorMessage="Enter Name" Display="Dynamic"></asp:RequiredFieldValidator>
+                                    </div>
+                                </div>
+                                <div class="row form-margin">
+                                    <div class="col-md-12">
+                                        <p class="Lato-Bold-16px" style="margin-bottom: 5px">Contact Number <span style="color: red">*</span></p>
+                                        <asp:TextBox ID="txtmobile" runat="server" CssClass="form-control Lato-Regular-16px" MaxLength="20"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ValidationGroup="SUBMIT22" ControlToValidate="txtmobile" CssClass="Lato-Regular-16px" runat="server" ErrorMessage="Enter Contact Number" Display="Dynamic"></asp:RequiredFieldValidator>
+                                    </div>
+                                </div>
+                                <div class="row form-margin">
+                                    <div class="col-md-12">
+                                        <p class="Lato-Bold-16px" style="margin-bottom: 5px">Email ID <span style="color: red">*</span></p>
+                                        <asp:TextBox ID="txtemail" runat="server" CssClass="form-control Lato-Regular-16px" MaxLength="60"></asp:TextBox>
+                                        <asp:RegularExpressionValidator ID="regexEmailValid" runat="server" ValidationGroup="SUBMIT22" CssClass="Lato-Regular-16px" ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ControlToValidate="txtemail" ErrorMessage="Invalid Email Format" Display="Dynamic"></asp:RegularExpressionValidator>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ValidationGroup="SUBMIT22" ControlToValidate="txtemail" CssClass="Lato-Regular-16px" runat="server" ErrorMessage="Enter Email ID" Display="Dynamic"></asp:RequiredFieldValidator>
+
+                                    </div>
+                                </div>
+                                <div class="row form-margin">
+                                    <div class="col-md-12">
+                                        <p class="Lato-Bold-16px" style="margin-bottom: 5px">Select Course <span style="color: red">*</span></p>
+                                        <asp:DropDownList ID="ddldrop" runat="server" CssClass="form-control Lato-Regular-16px">
+
+                                            <asp:ListItem Value=""> Select Course</asp:ListItem>
+                                            <asp:ListItem Text="B.Sc. in Hospitality & Hotel Administration" Value="B.Sc. in Hospitality & Hotel Administration"></asp:ListItem>
+                                            <asp:ListItem Text="Diploma in Food Production" Value="Diploma in Food Production"></asp:ListItem>
+                                            <asp:ListItem Text="Diploma in Bakery & Confectionary" Value="Diploma in Bakery & Confectionary"></asp:ListItem>
+                                            <asp:ListItem Text="Diploma in Food & Beverage Service" Value="Diploma in Food & Beverage Service"></asp:ListItem>
+                                        </asp:DropDownList>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" ValidationGroup="SUBMIT22" ControlToValidate="ddldrop" CssClass="Lato-Regular-16px" runat="server" ErrorMessage=" Select Course" Display="Dynamic"></asp:RequiredFieldValidator>
+                                    </div>
+                                </div>
+                                <div class="row form-margin">
+                                    <div class="col-md-12">
+
+                                        <div class="vacancy_txt_fld">
+                                            <img src="CaptchaImage.ashx" id="imgCaptcha" border="0" />
+                                            <a style="cursor: pointer;" onclick="javascript:RefreshCaptcha();">Refresh</a>
+                                        </div>
+                                        <br />
+                                        <asp:TextBox ID="txtCaptcha" runat="server" CssClass="form-control Lato-Regular-16px" MaxLength="20" placeholder="Enter Captcha above here" />
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator8" ValidationGroup="SUBMIT22" ControlToValidate="txtCaptcha" CssClass="Lato-Regular-16px" runat="server" ErrorMessage="Enter Captcha" Display="Dynamic"></asp:RequiredFieldValidator>
+
+                                    </div>
+                                </div>
+                                <div class="row form-margin">
+                                    <div class="col-md-12">
+                                        <asp:Button ID="btnSubmit" runat="server" ValidationGroup="SUBMIT22" CssClass="btn submit-btn" Text="Submit" OnClick="btnSubmit_Click1" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="myModalgeneral" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title Lato-Bold-18px">General Enquiry Form</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+
+                        <div class="row form-margin">
+                            <div class="col-md-12" style="text-align: right">
+                                <span class="Lato-Regular-16px" style="color: #222"><span><b style="color: red">*</b></span> indicates mandatory field.</span>
+                            </div>
+                        </div>
+                        <div class="row form-margin">
+                            <div class="col-md-12">
+                                <p class="Lato-Bold-16px" style="margin-bottom: 5px">Name <span style="color: red">*</span></p>
+                                <asp:TextBox ID="txtname2" ValidationGroup="vgContact" runat="server" CssClass="form-control Lato-Regular-16px" MaxLength="50"></asp:TextBox>
+                                <asp:RequiredFieldValidator ValidationGroup="vgContact" ID="RequiredFieldValidator4" ControlToValidate="txtname2" CssClass="Lato-Regular-16px" runat="server" ErrorMessage="Enter Name" Display="None"></asp:RequiredFieldValidator>
+                            </div>
+                        </div>
+                        <div class="row form-margin">
+                            <div class="col-md-12">
+                                <p class="Lato-Bold-16px" style="margin-bottom: 5px">Contact Number <span style="color: red">*</span></p>
+                                <asp:TextBox ID="txtmobile2" ValidationGroup="vgContact" runat="server" CssClass="form-control Lato-Regular-16px" MaxLength="20"></asp:TextBox>
+                                <asp:RequiredFieldValidator ValidationGroup="vgContact" ID="RequiredFieldValidator5" ControlToValidate="txtmobile2" CssClass="Lato-Regular-16px" runat="server" ErrorMessage="Enter Contact Number" Display="None"></asp:RequiredFieldValidator>
+                            </div>
+                        </div>
+                        <div class="row form-margin">
+                            <div class="col-md-12">
+                                <p class="Lato-Bold-16px" style="margin-bottom: 5px">Email ID <span style="color: red">*</span></p>
+                                <asp:TextBox ID="txtemail2" ValidationGroup="vgContact" runat="server" CssClass="form-control Lato-Regular-16px" MaxLength="80"></asp:TextBox>
+                                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" CssClass="Lato-Regular-16px" ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ControlToValidate="txtemail" ErrorMessage="Invalid Email Format" Display="Dynamic"></asp:RegularExpressionValidator>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator6" ValidationGroup="vgContact" ControlToValidate="txtemail2" CssClass="Lato-Regular-16px" runat="server" ErrorMessage="Enter Email ID" Display="None"></asp:RequiredFieldValidator>
+
+                            </div>
+                        </div>
+                        
+                        <div class="row form-margin">
+                            <div class="col-md-12">
+                                <p class="Lato-Bold-16px" style="margin-bottom: 5px">Message <span style="color: red">*</span></p>
+
+                                <asp:TextBox ID="txtmessage" ValidationGroup="vgContact" runat="server" TextMode="MultiLine" Rows="3" CssClass="form-control Lato-Regular-16px" MaxLength="150"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator7" ValidationGroup="vgContact" ControlToValidate="txtmessage" CssClass="Lato-Regular-16px" runat="server" ErrorMessage="Enter Message" Display="None"></asp:RequiredFieldValidator>
+
+                            </div>
+                        </div>
+                        <div class="row form-margin">
+                            <div class="col-md-12">
+                         
+                                            <div class="vacancy_txt_fld">
+                                                <img src="CaptchaImage.ashx" id="imgCaptcha2" border="0" />
+                                                <a style="cursor: pointer;" onclick="javascript:RefreshCaptcha2();">Refresh</a>
+                                            </div><br />
+                                            <asp:TextBox ID="txtCaptcha2" runat="server" CssClass="form-control Lato-Regular-16px" MaxLength="20" placeholder="Enter Captcha above here" />
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator9" ControlToValidate="txtCaptcha2" CssClass="Lato-Regular-16px" ValidationGroup="vgContact" runat="server" ErrorMessage="Enter Captcha" Display="None"></asp:RequiredFieldValidator>
+                                        
+                                 </div>
+                        </div>
+                        <div class="row form-margin">
+                            <div class="col-md-12">
+                                <%--  <asp:Button ID="btnsubmitenquiry" runat="server"  Text="Submit" OnClick="btnsubmitenquiry_Click" />  --%>
+                                <asp:Button ID="btnsubmitenquiry" runat="server" ValidationGroup="vgContact" CssClass="btn submit-btn" Text="Submit" OnClick="btnsubmitenquiry_Click" />
+                                <asp:ValidationSummary ID="vsSubmit" runat="server" ValidationGroup="vgContact"
+                                    ShowMessageBox="true" ShowSummary="false" HeaderText="Please rectify following error(s):" />
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+         <script>
+
+
+
+
+           
+           
+
+            $(function () {
+                
+                RefreshCaptcha();
+                RefreshCaptcha2();
+            });
+
+            function RefreshCaptcha() {
+                var img = document.getElementById("imgCaptcha");
+                img.src = "CaptchaImage.ashx?query=" + Math.floor(100000 + Math.random() * 900000);
+            }
+            function RefreshCaptcha2() {
+                var img = document.getElementById("imgCaptcha2");
+                img.src = "CaptchaImage.ashx?query=" + Math.floor(100000 + Math.random() * 900000);
+            }
+
+
+
+
+           
+        </script>
+         <script>
+
+
+
+             $(function () {
+                 $(".preload").fadeOut(2000, function () {
+                     $(".content").fadeIn(1000);
+                 });
+             });
+  </script>
+    </form>
+</body>
+</html>

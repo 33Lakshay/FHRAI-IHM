@@ -1,0 +1,32 @@
+﻿
+$(function () {
+    $('.numberVal').keypress(function (event) {
+        if ((event.which != 46 || $(this).val().indexOf('.') != -1) && (event.which < 48 || event.which > 57)) {
+            if (event.keyCode !== 8 && event.keyCode !== 46) { //exception
+                event.preventDefault();
+            }
+        }
+    });
+    $(".DecimalVal").keypress(function (event) {
+        if ((event.which != 46 || $(this).val().indexOf('.') != -1) && (event.which < 48 || event.which > 57)) {
+            if (event.keyCode !== 8 && event.keyCode !== 46) { //exception
+                event.preventDefault();
+            }
+        }
+        if (($(this).val().indexOf('.') != -1) && ($(this).val().substring($(this).val().indexOf('.'), $(this).val().indexOf('.').length).length > 2)) {
+            if (event.keyCode !== 8 && event.keyCode !== 46) { //exception
+                event.preventDefault();
+            }
+        }
+    });
+
+    //$("input[type='text'],input[type='email'],input[type='number'],input[type='textarea'] , input[type='password']").keypress(function (event) {
+    //    var keychar = String.fromCharCode(event.charCode ? event.which : event.charCode);
+    //    if (keychar == "'" || keychar == "`" || keychar == "!" || keychar == "#" || keychar == "$" || keychar == "%" || keychar == "^" || keychar == "&" || keychar == "*" || keychar == "(" || keychar == ")" || keychar == "-" || keychar == "_" || keychar == "+" || keychar == "=" || keychar == "/" || keychar == "~" || keychar == "<" || keychar == ">" || keychar == "," || keychar == ";" || keychar == ":" || keychar == "|" || keychar == "?" || keychar == "{" || keychar == "}" || keychar == "[" || keychar == "]" || keychar == "¬" || keychar == "£" || keychar == '"' || keychar == "\\") {
+    //        return false;
+    //    } else {
+    //        return true;
+    //    }
+    //});
+
+});

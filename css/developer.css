@@ -1,0 +1,126 @@
+/*
+Created By : Sagar Patil.
+Contact No : 100
+Employee No: 420
+*/
+
+
+.DivHideSuggesion{display: none;position: absolute;top: 0%;  left: 0%;width: 100%;height: 100%;background-color: black;z-index:1001;opacity:.80;}
+.DivShowSuggesion{display: none;position: absolute;top: 25%;left:30%; width:40%;height:auto;  padding: 0px;border: 4px solid #CCCCCC;background-color: white;z-index:1002;}
+
+
+@media (min-width : 319px) {
+.DivHideSuggesion{display: none;position: fixed;top: 0%;  left: 0%;width: 100%;height: 100%;background-color: black;z-index: 1001;opacity:.80;}
+.DivShowSuggesion{display: none;position: absolute;top: 25%;left: 4%; width: 93%;height:auto;  padding: 0px;border: 4px solid #CCCCCC;background-color: white;z-index:1002;}
+
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (-webkit-device-pixel-ratio: 1) and (orientation : portrait) {
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (-webkit-device-pixel-ratio: 2) and (orientation : portrait){
+
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (-webkit-device-pixel-ratio: 2) and (orientation : portrait){
+
+}
+
+@media (min-height:558px) and (max-width:360px){
+
+}
+
+@media (min-height:615px) and (max-width:360px){
+
+}
+
+@media (min-height:626px) and (max-width:375px){
+
+}
+
+@media (min-height:639px) and (max-width:360px){
+
+}
+
+@media (min-height:735px) and (max-width:414px){
+
+}
+
+
+@media (min-width:359px){
+
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px)and (orientation : portrait){
+
+}
+
+@media (min-width:374px){
+
+}
+
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait){
+
+}
+
+@media (min-width:413px){
+
+}
+
+@media (min-width:479px){
+
+}
+
+@media (min-width:559px){
+
+}
+
+@media (min-width:639px){
+
+}
+
+@media (min-width:666px){
+
+}
+
+@media (min-width:735px){
+
+}
+
+@media (min-width:767px){
+
+}
+
+@media (min-width : 780px) {
+.DivHideSuggesion{display: none;position: fixed;top: 0%;  left: 0%;width: 100%;height: 100%;background-color: black;z-index:1001;opacity:.80;}
+.DivShowSuggesion{display: none;position: absolute;top: 25%;left:30%; width:40%;height:auto;  padding: 0px;border: 4px solid #CCCCCC;background-color: white;z-index:1002;}
+
+}
+
+@media screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-min-device-pixel-ratio: 1){
+
+}
+
+@media screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2){
+
+}
+
+@media (min-width : 965px){
+
+}
+
+@media (min-width:1023px){
+
+}
+
+@media (min-width:1279px){
+
+}
+
+@media (min-width:1365px){
+
+}
+
+@media (min-width:1439px){
+
+}

@@ -1,0 +1,78 @@
+﻿
+#NewsTicker{
+	/*border:solid 1px #cccccc;*/
+	  background: #efefef;
+  width: 250px;
+	/*height:364px;*/
+	margin:0 auto;
+}
+	#NewsTicker h1{
+		padding:6px; margin:0; border:0;
+		background:#dfe9d5;
+		color:#000000;
+		font-size:11px;
+		font-weight:bold;
+	}
+	#NewsVertical {
+	/*width: 300px;
+	height: 300px;*/
+	display: block;
+	overflow: hidden;
+	position: relative;
+	}
+	#controller{
+	padding:6px;
+	font-size:11px;
+	color:#666;
+	}
+	#play_scroll_cont{display:none;}
+/* --------------- */
+/* Ticker Vertical */
+	#TickerVertical {
+		width: 250px;
+		/*height: 330px;*/
+		display: block;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	#TickerVertical li {
+		display: block;
+		width: 288px;
+		color: #333333;
+		text-align: left;
+		font-size: 11px;
+		margin: 0;
+		padding: 6px;
+		float: left;
+	}
+		#TickerVertical li .NewsTitle{
+			display: block;
+			color: #000000;
+			font-size: 12px;
+			font-weight:bold;
+			margin-bottom:6px;
+		}
+		#TickerVertical li .NewsTitle a:link,
+		#TickerVertical li .NewsTitle a:Visited {
+			display: block;
+			color: #000000;
+			font-size: 12px;
+			font-weight:bold;
+			margin-bottom:6px;
+			text-decoration:none;
+		}
+		#TickerVertical li .NewsTitle a:hover {
+			text-decoration:underline;
+		}
+		
+		#TickerVertical li .NewsImg{
+			float:left;
+			margin-right:10px;
+		}
+		#TickerVertical li .NewsFooter{
+			display: block;
+			color: #000000;
+			font-size: 10px;
+			margin:6px 0 14px 0;
+		}

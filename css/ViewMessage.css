@@ -1,0 +1,237 @@
+﻿/*view message*/
+.view_message_div {
+    width: 70%;
+    margin: 0 auto;
+}
+.heading {
+    font-size: 14px;
+    font-family: Calibri;
+    width: 100%;
+    z-index: 999999;
+    padding-top: 20px;
+    color: gray;
+}
+.message_content {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0px;
+    font-family: Arial;
+    font-size: 14px;
+}
+.message_div {
+    border: 1.5px solid gray;
+    border-radius: 4px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.message_left_div {
+    width: 25%;
+    
+    vertical-align: top;
+    float: left;
+}
+#DivPMessage {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.message_rpt {
+
+}
+.innerdiv {
+    width:100%;
+    border-bottom:1px solid #DAD0D0;
+    cursor:pointer;
+}
+.message_sec {
+    width:100%;
+    height: auto;
+    overflow: hidden;
+}
+.message_right_div {
+    width:75%;
+    float:left;
+    border-left: 1px solid #DAD0D0;
+}
+.message_result {
+    width:100%;
+}
+.message_frame_div {
+    width:100%;
+    border-top:1px solid #DAD0D0;
+}
+.msg_right_content {
+    text-align:center;
+    width:100%;padding-top:7px;
+    padding-bottom:8px;
+}
+.msg_result_main {
+    padding-left:10px;
+    padding-right:10px;
+}
+.msg_iframe {
+    border:none;
+    width:100%;
+    height:auto;
+}
+.msg_field_div {
+    /*width:90%;*/
+    width: 70%;
+    float: left;
+    padding-top: 10px;
+}
+.message_img_div {
+    padding-left: 8px;
+    padding-top: 10px;
+    width: 30%;
+    float: left;
+}
+#singleMessageMainDiv {
+   	width: 100%;
+	overflow-x:hidden;
+    overflow-y:auto;
+}
+.single_msg_maindiv {
+    width:100%;
+}
+.single_msg_div {
+    width:100%;
+}
+.single_msg_innerdiv {
+    width: 10%;
+    float: left;
+    vertical-align:top;
+}
+.single_msg_sec {
+    width:90%;
+    vertical-align:top;
+}
+.single_msg_desig {
+    font-size:11px;
+    width:275px;
+}
+.single_msg_div2 {
+    width:100% !important;
+    padding-left:0px ;
+}
+.single_msg_width {
+    width:100%;
+}
+.message_bottom_box {
+    /*width:90% !important;
+    float:left !important;*/
+}
+.message_txtbox {
+    width:100%;
+    padding: 3px;
+    resize:none;
+    
+}
+.send_msg_div {
+    width:100%;
+}
+.send_msg_main_div {
+    width: 90%;
+    position: relative;
+    margin: 2% auto;
+    min-height:95px;
+}
+.send_msg_txtmain {
+    width:100%;
+}
+.fhrai_message_main_div {
+    margin-top: 2%;
+    position: relative;
+}
+.message_addnew_btn {
+    padding: 6px 15px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    float:right;
+}
+.addnew_modal {
+    margin: 200px auto !important;
+}
+.send_msg_inner_div {
+    width:100%;
+}
+.send_msg_imgicon {
+    vertical-align:top;
+    width:20%;
+}
+.UploadImage {
+    padding-top:3px;
+    float:left;
+    cursor:pointer;
+}
+.UploadImage img {
+    height:15px;
+    width:20px;
+}
+.upload_attach {
+    padding-top:3px;
+    float:left;
+    padding-left:10px;
+    cursor:pointer;
+}
+.upload_attach img {
+    height:15px;
+    width:18px;
+}
+.blank_div {
+    width:15%;
+}
+.msg_fileupload_div {
+    width:65%;
+}
+.send_msg_icon {
+    width:9%;
+    position: absolute;
+    border: 1px solid rgb(180, 171, 171);
+    height: 44px;
+    margin-left: -41px;
+    margin-top:1px;
+    border-left:none;
+}
+.save_msg_div {
+    position: absolute;
+     margin-top: 10px;
+      cursor:pointer;
+      right:0px; top:0%;
+}
+.view_msg_head_inner {
+    font-size: 23px;
+     color: black;
+      font-weight: bold;
+       padding-left: 10px;
+       padding-bottom:15px;
+}
+.SendMessageBtn {
+            background-image:url(images/sendMessageimage.png);
+            background-repeat:no-repeat;
+            background-color:white;
+            background-size: 42px;
+            height:30px;
+            width:50px;border:none;
+            cursor:pointer;
+        }
+
+          .SendMessageBtn1 {
+            background-image:url(images/sendMessageimage.png);
+            background-repeat:no-repeat;
+            background-color:white;
+            background-size: 42px;
+            height:30px;
+            width:50px;border:none;
+            display:none;
+        }
+          /*#DivPMessage {
+            
+	width:186px;
+	 
+	overflow-x:hidden;
+    overflow-y:auto;
+        }*/
